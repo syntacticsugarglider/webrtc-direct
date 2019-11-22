@@ -1,0 +1,12 @@
+[package]
+name = "sctp"
+version = "0.1.0"
+description = "Bindings to usrsctp"
+authors = ["Izzy Swart <zenerboson@gmail.com>"]
+build = "build.rs"
+
+[build-dependencies]
+bindgen = { version = "0.52.0" }
+cc = "1.0.47"
+
+[dependencies]

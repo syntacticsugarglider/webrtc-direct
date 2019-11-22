@@ -1,0 +1,25 @@
+[package]
+name = "rtcserver"
+version = "0.1.0"
+authors = ["Izzy Swart <zenerboson@gmail.com>"]
+edition = "2018"
+
+[workspace]
+members = ["sctp"]
+
+[dependencies]
+failure = "0.1.6"
+errno = "0.2.4"
+async-std = "1.0.1"
+futures = { version = "0.3.1", features = ["thread-pool"] }
+lazy_static = "1.4.0"
+stun_codec = "0.1.12"
+bytecodec = "0.4.12"
+openssl = "0.10.25"
+openssl-async = { git = "https://github.com/noocene/openssl-async" }
+trackable = "0.2.23"
+zerocopy = "0.2.8"
+num_enum = "0.4.2"
+
+[dependencies.sctp]
+path = "./sctp"

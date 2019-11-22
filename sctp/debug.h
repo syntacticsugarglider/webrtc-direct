@@ -1,0 +1,1 @@
+void variadic_debug(const char *format, ...);
